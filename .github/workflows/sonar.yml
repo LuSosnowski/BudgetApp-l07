@@ -34,7 +34,7 @@ jobs:
 
       - name: Build backend
         working-directory: BackEnd
-        run:
+        run: |
           chmod +x ./mvnw
           ./mvnw -DskipTests package
 
