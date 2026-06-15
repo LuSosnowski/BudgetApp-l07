@@ -33,7 +33,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
       - name: Build backend
-        working-directory: backend
+        working-directory: BackEnd
         run: ./mvnw -DskipTests package
 
       - name: Set up Node.js
@@ -41,10 +41,10 @@ jobs:
         with:
           node-version: 24
           cache: npm
-          cache-dependency-path: frontend/package-lock.json
+          cache-dependency-path: FrontEnd/package-lock.json
 
       - name: Build frontend
-        working-directory: frontend
+        working-directory: FrontEnd
         run: |
           npm ci
           npm run build
