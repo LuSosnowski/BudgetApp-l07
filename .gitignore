@@ -1,0 +1,61 @@
+# System
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# Maven / Java backend
+target/
+.mvn/wrapper/maven-wrapper.jar
+**/target/
+**/src/main/**/target/
+**/src/test/**/target/
+
+# Spring / STS
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# Docker
+docker-compose.override.yml
+docker/.env
+
+# Frontend logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Frontend build
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Misc editor files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
