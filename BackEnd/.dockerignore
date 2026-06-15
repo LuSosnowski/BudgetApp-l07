@@ -1,0 +1,7 @@
+target
+.idea
+.env
+docker
+docs
+postman
+*.log
